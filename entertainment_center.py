@@ -1,36 +1,44 @@
 import fresh_tomatoes
 import media
 
+# Toy Story
 toy_story = media.Movie("Toy Story",
-                        "Story of a boy and his toy",
-                        "https://en.wikipedia.org/wiki/Toy_Story#/media/File:Toy_Story.jpg",
-                        "https://www.youtube.com/watch?v=tN1A2mVnrOM")
+                        "A story of a boy and his toys that",
+                        "http://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg",
+                        "https://www.youtube.com/watch?v=KYz2wyBy3kc")
 
+# Avatar
 avatar = media.Movie("Avatar",
-                     "A marin vesit on alian planet",
-                     "https://en.wikipedia.org/wiki/Avatar_(2009_film)#/media/File:Avatar-Teaser-Poster.jpg",
-                     "https://www.youtube.com/watch?v=5PSNL1qE6VY")
+                     "A marine on an alien planet",
+                     "http://upload.wikimedia.org/wikipedia/id/b/b0/Avatar-Teaser-Poster.jpg",
+                     "https://www.youtube.com/watch?v=d1_JBMrrYw8")
 
-life_of_Pi = media.Movie("Life of Pi",
-                     "A young man who survives a disaster at sea is hurtled into an epic journey of adventure and discovery",
-                     "https://m.media-amazon.com/images/M/MV5BNTg2OTY2ODg5OF5BMl5BanBnXkFtZTcwODM5MTYxOA@@._V1_.jpg",
-                     "https://www.imdb.com/title/tt0454876/videoplayer/vi2646320921")
+# School of Rock
+school_of_rock = media.Movie("School of Rock",
+                             "About School of Rock",
+                             "http://upload.wikimedia.org/wikipedia/en/1/11/School_of_Rock_Poster.jpg",
+                             "https://www.youtube.com/watch?v=XCwy6lW5Ixc")
 
-dreams = media.Movie("Dreams",
-                     "A collection of tales based upon the actual dreams of director Akira Kurosawa.",
-                     "https://m.media-amazon.com/images/M/MV5BYWMxYmI5OTAtOWUwZi00YzRhLTkwMzMtNTNmNzJjZGVlMWQ3XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_CR0,0,708,1000_AL_.jpg",
-                     "https://www.imdb.com/title/tt0100998/videoplayer/vi105028633")
+# Ratatouille
+ratatouille = media.Movie("Ratatouille",
+                          "About a rat that can cook!",
+                          "http://upload.wikimedia.org/wikipedia/en/5/50/RatatouillePoster.jpg",
+                          "https://www.youtube.com/watch?v=c3sBBRxDAqk")
 
-gladiator = media.Movie("Gladiator",
-                     "When a Roman General is betrayed, and his family murdered by an emperor's corrupt son, he comes to Rome as a gladiator to seek revenge.",
-                     "https://en.wikipedia.org/wiki/Avatar_(2009_film)#/media/File:Avatar-Teaser-Poster.jpg",
-                     "https://www.youtube.com/watch?v=lKn-Agk-yAI")
+# Midnight in Paris
+midnight_in_paris = media.Movie("Mightnight in Paris",
+                                "About a mightnight in Paris",
+                                "http://upload.wikimedia.org/wikipedia/en/9/9f/Midnight_in_Paris_Poster.jpg",
+                                "https://www.youtube.com/watch?v=FAfR8omt-CY")
 
-three_iron = media.Movie("3-Iron",
-                     "A transient young man breaks into empty homes to partake of the vacationing residents' lives for a few days.",
-                     "https://m.media-amazon.com/images/M/MV5BMTM1ODIwNzM5OV5BMl5BanBnXkFtZTcwNjk5MDkyMQ@@._V1_SY1000_CR0,0,675,1000_AL_.jpg",
-                     "https://www.youtube.com/watch?v=S-S5n0JniDw")
+# Hunger Game
+hunger_game = media.Movie("Hunger Game",
+                          "About Hunger Game",
+                          "http://upload.wikimedia.org/wikipedia/en/4/42/HungerGamesPoster.jpg",
+                          "https://www.youtube.com/watch?v=SMGRhAEn6K0")
 
-movies = [toy_story, avatar, life_of_Pi, dreams, gladiator, three_iron]
+# Build website
+movies = [toy_story, avatar, school_of_rock,
+          ratatouille, midnight_in_paris, hunger_game]
 
 fresh_tomatoes.open_movies_page(movies)
